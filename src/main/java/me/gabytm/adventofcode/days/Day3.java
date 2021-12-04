@@ -2,7 +2,6 @@ package me.gabytm.adventofcode.days;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -89,8 +88,9 @@ public class Day3 extends Day<Integer> {
 
         final var reportLength = report.size();
 
-        for (final int n : onesArray) {
-            if (reportLength - n < n) {
+        for (final int one : onesArray) {
+            // reportLength - one = zeros
+            if (reportLength - one < one) {
                 gamma.append(1);
                 epsilon.append(0);
             } else {
