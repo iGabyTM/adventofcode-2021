@@ -83,8 +83,8 @@ public class Day3 extends Day<Integer> {
             }
         }
 
-        var gamma = new StringBuilder();
-        var epsilon = new StringBuilder();
+        final var gamma = new StringBuilder();
+        final var epsilon = new StringBuilder();
 
         final var reportLength = report.size();
 
