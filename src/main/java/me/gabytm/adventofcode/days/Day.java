@@ -27,6 +27,11 @@ public abstract class Day<T> {
         }
     }
 
+    protected String[] getInput(final int part, final String regex) {
+        final var input = getInput(part);
+        return input == null ? null : input.split(regex);
+    }
+
     public abstract T solveFirstPart();
 
     public abstract T solveSecondPart();
