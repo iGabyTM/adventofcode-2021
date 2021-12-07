@@ -12,7 +12,7 @@ public abstract class Day<T> {
         this.dayNumber = dayNumber;
     }
 
-    public static void solve(final Day<?> day) {
+    public static void showAnswer(final Day<?> day) {
         System.out.println("Day #" + day.dayNumber);
         System.out.println("\tFirst part: " + day.solveFirstPart());
         System.out.println("\tSecond part: " + day.solveSecondPart());
