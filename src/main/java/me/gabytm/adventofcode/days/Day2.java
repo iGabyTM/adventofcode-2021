@@ -13,11 +13,11 @@ public class Day2 extends Day<Integer> {
     }
 
     public static void main(String[] args) {
-        Day.solve(new Day2());
+        Day.showAnswer(new Day2());
     }
 
     private List<Pair<String, Integer>> getCommands(final int part) {
-        return Arrays.stream(getInput(part).split("\n"))
+        return Arrays.stream(getInput(part, "\n"))
                 .map(String::trim)
                 .map(it -> {
                     final var parts = it.split(" ");

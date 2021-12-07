@@ -14,11 +14,11 @@ public class Day4 extends Day<Integer> {
     }
 
     public static void main(String[] args) {
-        Day.solve(new Day4());
+        Day.showAnswer(new Day4());
     }
 
     private Pair<List<Integer>, List<Board>> getNumbersAndBoards() {
-        final var input = Arrays.stream(getInput(1).split("\n"))
+        final var input = Arrays.stream(getInput(1, "\n"))
                 .map(String::trim)
                 .collect(Collectors.toList());
 

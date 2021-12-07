@@ -18,13 +18,13 @@ public class Day5 extends Day<Integer> {
     }
 
     public static void main(String[] args) {
-        Day.solve(new Day5());
+        Day.showAnswer(new Day5());
     }
 
     private Tuple<Integer, Integer, List<Line>> getLines(final boolean diagonals) {
         final var maxX = new AtomicInteger();
         final var maxY = new AtomicInteger();
-        final var lines = Arrays.stream(getInput(1).split("\n"))
+        final var lines = Arrays.stream(getInput(1, "\n"))
                 .map(it -> {
                     final var matcher = PATTERN.matcher(it);
 

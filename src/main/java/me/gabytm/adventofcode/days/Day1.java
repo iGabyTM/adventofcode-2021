@@ -11,11 +11,11 @@ public class Day1 extends Day<Integer> {
     }
 
     public static void main(String[] args) {
-        Day.solve(new Day1());
+        Day.showAnswer(new Day1());
     }
 
     private List<Integer> getValues(final int part) {
-        return Arrays.stream(getInput(part).split("\n"))
+        return Arrays.stream(getInput(part, "\n"))
                 .map(String::strip)
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());

@@ -12,11 +12,11 @@ public class Day3 extends Day<Integer> {
     }
 
     public static void main(String[] args) {
-        Day.solve(new Day3());
+        Day.showAnswer(new Day3());
     }
 
     private List<String> getDiagnosticReport() {
-        return Arrays.stream(getInput(1).split("\n"))
+        return Arrays.stream(getInput(1, "\n"))
                 .map(String::trim)
                 .collect(Collectors.toList());
     }

@@ -10,7 +10,7 @@ public class Day6 extends Day<Long> {
     }
 
     public static void main(String[] args) {
-        Day.solve(new Day6());
+        Day.showAnswer(new Day6());
     }
 
     @Override
